@@ -11,16 +11,11 @@
     {% block slider %}
     {% endblock %}
 
-    <div class="container">
-      {% block sidebar %}
+    {% block contents %}
+      {% block main %}
+        ここにメインコンテンツを表示する
       {% endblock %}
-
-      {% block content %}
-        <h1>コンテンツ</h1>
-        <p>ここにページコンテンツを表示する</p>
-      {% endblock %}
-      </div>
-    </div>
+    {% endblock %}
   </div>
 
   {% block footer %}

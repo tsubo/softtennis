@@ -1,5 +1,14 @@
 {% extends "layouts/base.html.twig" %}
 
-{% block sidebar %}
-  {{ include('sidebar/sidebar.html.twig') }}
+{% block contents %}
+  <div class="container">
+    {% block sidebar %}
+      {{ include('sidebar/sidebar.html.twig') }}
+    {% endblock %}
+
+    {% block main %}
+      <h1>メインコンテンツ</h1>
+      <p>ここにメインコンテンツを表示する</p>
+    {% endblock %}
+  </div>
 {% endblock %}
