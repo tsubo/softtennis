@@ -4,15 +4,21 @@
   <!-- BEGIN: PAGE CONTAINER -->
   <div class="c-layout-page">
     <!-- BEGIN: PAGE CONTENT -->
-    {{ include('pages/home/_shop2-1.html.twig') }}
-    {{ include('pages/home/_shop2-2.html.twig') }}
-    {{ include('pages/home/_shop2-3.html.twig') }}
-    {{ include('pages/home/_shop2-4.html.twig') }}
-    {{ include('pages/home/_shop2-5.html.twig') }}
-    {{ include('pages/home/_shop2-6.html.twig') }}
-    {{ include('pages/home/_shop2-7.html.twig') }}
-    {{ include('pages/home/_shop2-8.html.twig') }}
+    <div>ここにスライダーを表示</div>
+    {#{{ include('pages/home/_slider.html.twig') }}#}
+    <!-- お知らせ（箇条書き） -->
+    {{ include('pages/home/_news.html.twig') }}
+    <!-- 新着商品（カルーセル） -->
+    {{ include('pages/home/_new_products.html.twig') }}
+    <!-- カテゴリ毎の人気商品（タブ切り替え） -->
+    {{ include('pages/home/_popular.html.twig') }}
+    <!-- 店長のおすすめ商品（グリッド） -->
+    {{ include('pages/home/_hot_products.html.twig') }}
     <!-- END: PAGE CONTENT -->
   </div>
   <!-- END: PAGE CONTAINER -->
+{% endblock %}
+
+{% block pagescript %}
+  {#{{ include('pages/home/_pagescript.html.twig') }}#}
 {% endblock %}
