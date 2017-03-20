@@ -12,6 +12,15 @@
     margin: 0 auto;
 }
 
+/* フッターのリンク文字色 */
+.c-layout-footer.c-layout-footer-3 .c-prefooter .c-container a,
+.c-layout-footer.c-layout-footer-3 .c-prefooter .c-container .c-links > li > a {
+  color: #7f8c97;
+}
+.c-layout-footer.c-layout-footer-3 .c-prefooter .c-container a:hover {
+  color: #32c5d2;
+}
+
 @media (min-width: 992px) {
   /* メガメニューとスライダー間の空白を埋めるために修正 */
   .c-layout-header-fixed.c-layout-header-6-topbar .c-layout-page {
