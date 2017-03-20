@@ -3,11 +3,14 @@
     <span class="c-arrow c-toggler"></span>
   </a>
   <ul class="dropdown-menu c-menu-type-classic c-pull-left">
-
     <li class="dropdown-submenu">
-      <a href="#">ヨネックス
+      <a href="{{ cat_url('soft-racket') }}">全ブランド
         <span class="c-arrow c-toggler"></span>
       </a>
+      <a href="{{ cat_url('yonex-racket') }}">ヨネックス
+        <span class="c-arrow c-toggler"></span>
+      </a>
+      {# ２階層目は削除
       <ul class="dropdown-menu c-pull-right">
         <li>
           <a href="{{ cat_url('F-LASER') }}">エフレーザー(F-LASER)</a>
@@ -33,12 +36,14 @@
         <li>
           <a href="{{ cat_url('ACEGATE') }}">エースゲート(ACEGATE)</a>
         </li>
-	　　</ul>
+      </ul>
+      #}
     </li>
     <li class="dropdown-submenu">
-      <a href="#">ミズノ
+      <a href="{{ cat_url('mizuno-racket') }}">ミズノ
         <span class="c-arrow c-toggler"></span>
       </a>
+      {# ２階層目は削除
       <ul class="dropdown-menu c-pull-right">
         <li>
           <a href="{{ cat_url('Xyst-ZERO') }}">ジストゼロ(Xyst ZERO)</a>
@@ -56,9 +61,10 @@
           <a href="{{ cat_url('TECHNIX ') }}">テクニクス(TECHNIX)</a>
         </li>
       </ul>
+      #}
     </li>
     <li>
-      <a href="{{ cat_url('yonex-racket') }}">スリクソン</a>
+      <a href="{{ cat_url('srixon-racket') }}">スリクソン</a>
     </li>
   </ul>
 </li>
