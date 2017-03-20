@@ -1,58 +1,40 @@
-<!-- BEGIN: LAYOUT/SLIDERS/SHOP-REVO-SLIDER-4 -->
-<!-- BEGIN: REVOLUTION SLIDER 2 -->
-<section class="c-layout-revo-slider c-layout-revo-slider-14" dir="ltr">
-  <div class="tp-banner-container tp-fullscreen">
-    <div class="tp-banner rev_slider" data-version="5.0">
-      <ul>
-        <!--BEGIN: SLIDE #1 -->
-        <li data-transition="fade" data-slotamount="1" data-masterspeed="1000">
-          <img alt="" src="assets/base/img/content/shop4/65.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
-          <!--BEGIN: MAIN TITLE -->
-          <div class="tp-caption customin customout tp-resizeme" data-x="center" data-y="center" data-hoffset="385" data-voffset="-50" data-speed="500" data-start="1000" data-transform_in="x:0;y:0;z:0;rotationX:0.5;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;s:500;e:Back.easeInOut;"
-          data-transform_out="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;s:600;e:Back.easeInOut;" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
-          data-endspeed="600">
-            <div class="c-slider-14-title c-center">
-              <p class="c-font-dark c-font-uppercase c-font-33 c-font-bold">It's Hot Deal Today</p>
-              <h3 class="c-main-title c-font-bold c-font-uppercase c-font-white">
-                <span class="c-theme-font">Shop Now</span>
-              </h3>
-            </div>
-          </div>
-          <!--END -->
-          <!--BEGIN: ACTION BUTTON -->
-          <div class="tp-caption randomrotateout tp-resizeme" data-x="center" data-y="center" data-hoffset="390" data-voffset="100" data-speed="500" data-start="2000" data-transform_in="x:0;y:0;z:0;rotationX:0.5;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;s:500;e:Back.easeInOut;"
-          data-transform_out="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;s:500;e:Back.easeInOut;">
-            <a href="#" class="c-action-btn btn btn-md c-btn-square c-btn-bold c-btn-dark-1 c-btn-uppercase c-center">Shop Now</a>
-          </div>
-          <!--END -->
-        </li>
-        <!--END -->
-        <!--BEGIN: SLIDE #2 -->
-        <li data-transition="fade" data-slotamount="1" data-masterspeed="1000">
-          <img alt="" src="assets/base/img/content/shop4/47.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
-          <!--BEGIN: MAIN TITLE -->
-          <div class="tp-caption customin customout tp-resizeme" data-x="center" data-y="center" data-hoffset="385" data-voffset="-50" data-speed="500" data-start="1000" data-transform_in="x:0;y:0;z:0;rotationX:0.5;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;s:500;e:Back.easeInOut;"
-          data-transform_out="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;s:600;e:Back.easeInOut;" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
-          data-endspeed="600">
-            <div class="c-slider-14-title c-center">
-              <p class="c-font-dark c-font-uppercase c-font-33 c-font-bold c-margin-b-20">It's Hot Deal Today</p>
-              <h3 class="c-main-title c-font-bold c-font-uppercase c-font-white">
-                <span class="c-theme-font">Shop Now</span>
-              </h3>
-            </div>
-          </div>
-          <!--END -->
-          <!--BEGIN: ACTION BUTTON -->
-          <div class="tp-caption randomrotateout tp-resizeme" data-x="center" data-y="center" data-hoffset="390" data-voffset="100" data-speed="500" data-start="2000" data-transform_in="x:0;y:0;z:0;rotationX:0.5;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;s:500;e:Back.easeInOut;"
-          data-transform_out="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;s:500;e:Back.easeInOut;">
-            <a href="#" class="c-action-btn btn btn-md c-btn-square c-btn-bold c-btn-dark-1 c-btn-uppercase c-center">Shop Now</a>
-          </div>
-          <!--END -->
-        </li>
-        <!--END -->
-      </ul>
+<!-- BEGIN: SLIDER -->
+<div id="slider-top" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <!-- ページ数を表す丸いドット -->
+  <ol class="carousel-indicators">
+    <!-- ※ ページの数に合わせて li タグを増減すること -->
+    <li data-target="#slider-top" data-slide-to="0" class="active"></li>
+
+    {# スライダーインジケータを増やす時の雛形
+    <li data-target="#slider-top" data-slide-to="1"></li>
+    #}
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <!-- スライド画像 (1) -->
+    <!-- ※ 最初に表示する画像には class に active を指定すること-->
+    <div class="item active">
+      <img src="img/slider/top.jpg" alt="ソフトテニスショップ LAFINO">
     </div>
+
+    {# スライダー画像を増やす時の雛形
+    <!-- スライド画像 (n) -->
+    <div class="item">
+      <img src="slider_img/top.jpg" alt="ここに画像名を書く">
+    </div>
+    #}
   </div>
-</section>
-<!-- END: LAYOUT/SLIDERS/SHOP-REVO-SLIDER-4 -->
-<!-- BEGIN: CONTENT/SHOPS/SHOP-2-3 -->
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#slider-top" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#slider-top" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- END: SLIDER -->

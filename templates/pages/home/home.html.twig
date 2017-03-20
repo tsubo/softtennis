@@ -4,8 +4,7 @@
   <!-- BEGIN: PAGE CONTAINER -->
   <div class="c-layout-page">
     <!-- BEGIN: PAGE CONTENT -->
-    <div>ここにスライダーを表示</div>
-    {#{{ include('pages/home/_slider.html.twig') }}#}
+    {{ include('pages/home/_slider.html.twig') }}
     <!-- お知らせ（箇条書き） -->
     {{ include('pages/home/_news.html.twig') }}
     <!-- 新着商品（カルーセル） -->
@@ -20,5 +19,5 @@
 {% endblock %}
 
 {% block pagescript %}
-  {#{{ include('pages/home/_pagescript.html.twig') }}#}
+  {{ include('pages/home/_pagescript.html.twig') }}
 {% endblock %}

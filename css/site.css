@@ -1,7 +1,16 @@
-/*
- * top bar のボタン
- * スマホ表示の時、2段になった時にログインボタンが1段目に被ってしまうことの修正
- */
+/* top bar のボタン */
+/* スマホ表示の時、2段になった時にログインボタンが1段目に被ってしまうことの修正 */
 .c-layout-header.c-layout-header-6 .c-topbar .c-top-menu > .c-links > li > .btn {
   padding: 3px 15px 1px;
+}
+/* slider top の画像を中央に寄せる */
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  /* メガメニューとスライダー間の空白を埋めるために修正 */
+  .c-layout-header-fixed.c-layout-header-6-topbar .c-layout-page {
+    margin-top: 160px;
+  }
 }
