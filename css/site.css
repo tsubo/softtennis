@@ -1,4 +1,7 @@
-/* top bar のボタン*/
+/*
+ * top bar のボタン
+ * スマホ表示の時、2段になった時にログインボタンが1段目に被ってしまうことの修正
+ */
 .c-layout-header.c-layout-header-6 .c-topbar .c-top-menu > .c-links > li > .btn {
   padding: 3px 15px 1px;
 }
