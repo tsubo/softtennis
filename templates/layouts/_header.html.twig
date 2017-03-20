@@ -6,57 +6,27 @@
       <nav class="c-top-menu">
         <ul class="c-links c-theme-ul">
           <li>
-            <a href="http://www.softtennis-lafino.jp/fs/softtennis/c/request" class="c-font-uppercase c-font-bold">お問い合わせ</a>
+            <a href="http://www.softtennis-lafino.jp/fs/softtennis/c/request" class="c-font-uppercase c-font-bold">お問合せ</a>
           </li>
           <li>
-            <a href="http://www.softtennis-lafino.jp/fs/softtennis/c/guide" class="c-font-uppercase c-font-bold">お買い物ガイド</a>
+            <a href="http://www.softtennis-lafino.jp/fs/softtennis/c/guide" class="c-font-uppercase c-font-bold">お買物ガイド</a>
           </li>
           <li>
-            <a href="http://www.softtennis-lafino.jp/fs/softtennis/c/shopintroduction" class="c-font-uppercase c-font-bold">ショップ紹介</a>
+            <a href="http://www.softtennis-lafino.jp/fs/softtennis/c/shopintroduction" class="c-font-uppercase c-font-bold">お店紹介</a>
           </li>
-          <li class="c-divider"></li>
           <li>
-            <a href="https://c07.future-shop.jp/fs/softtennis/MemberEntryEdit.html" class="c-font-uppercase c-font-bold c-font-dark">新規会員登録</a>
+            <a href="https://c07.future-shop.jp/fs/softtennis/MemberEntryEdit.html" class="c-font-uppercase c-font-bold c-font-dark">会員登録</a>
           </li>
           <li>
             <a href="https://c07.future-shop.jp/fs/softtennis/Login.html?url=https://c07.future-shop.jp/fs/softtennis/MyPageTop.html" class="btn c-theme-btn c-btn-square c-btn-uppercase c-btn-bold">ログイン</a>
           </li>
         </ul>
-        {# 削除
-        <ul class="c-ext hide c-theme-ul">
-          <li class="c-lang dropdown c-last">
-            <a href="#">en</a>
-            <ul class="dropdown-menu pull-right" role="menu">
-              <li class="active">
-                <a href="#">English</a>
-              </li>
-              <li>
-                <a href="#">German</a>
-              </li>
-              <li>
-                <a href="#">Espaniol</a>
-              </li>
-              <li>
-                <a href="#">Portugise</a>
-              </li>
-            </ul>
-          </li>
-          <li class="c-search hide">
-            <!-- BEGIN: QUICK SEARCH -->
-            <form action="#">
-              <input type="text" name="query" placeholder="search..." value="" class="form-control" autocomplete="off">
-              <i class="fa fa-search"></i>
-            </form>
-            <!-- END: QUICK SEARCH -->
-          </li>
-        </ul>
-        #}
       </nav>
       <div class="c-brand">
-        <a href="index.php" class="c-logo">
-          <img src="{{ ssl_url('img/logo_lafino_B2.png') }}" alt="LAFINO" class="c-desktop-logo">
-          <img src="{{ ssl_url('img/logo_lafino_B2.png') }}" alt="LAFINO" class="c-desktop-logo-inverse">
-          <img src="{{ ssl_url('img/logo_lafino_B2.png') }}" alt="LAFINO" class="c-mobile-logo"> </a>
+        <a href="/" class="c-logo">
+          <img src="{{ ssl_url('img/logo_lafino_B4.png') }}" alt="ソフトテニスショップ LAFINO" class="c-desktop-logo">
+          <img src="{{ ssl_url('img/logo_lafino_B4.png') }}" alt="ソフトテニスショップ LAFINO" class="c-desktop-logo-inverse">
+          <img src="{{ ssl_url('img/logo_lafino_B4.png') }}" alt="ソフトテニスショップ LAFINO" class="c-mobile-logo"> </a>
         <ul class="c-icons c-theme-ul">
           <li>
             <a href="https://twitter.com/soft_lafino">
@@ -87,9 +57,6 @@
           <span class="c-line"></span>
           <span class="c-line"></span>
         </button>
-        <button class="c-search-toggler" type="button">
-          <i class="fa fa-search"></i>
-        </button>
       </div>
     </div>
   </div>
@@ -98,13 +65,6 @@
       <!-- BEGIN: BRAND -->
       <div class="c-navbar-wrapper clearfix">
         <!-- END: BRAND -->
-        <!-- BEGIN: QUICK SEARCH -->
-        <form class="c-quick-search" action="#">
-          <input type="text" name="query" placeholder="Type to search..." value="" class="form-control" autocomplete="off">
-          <span class="c-theme-link">&times;</span>
-        </form>
-        <!-- END: QUICK SEARCH -->
-
         {{ include('mega_menu/mega_menu.html.twig') }}
       </div>
       <!-- BEGIN: LAYOUT/HEADERS/QUICK-CART -->

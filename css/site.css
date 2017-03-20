@@ -1,0 +1,4 @@
+/* top bar のボタン*/
+.c-layout-header.c-layout-header-6 .c-topbar .c-top-menu > .c-links > li > .btn {
+  padding: 3px 15px 1px;
+}
