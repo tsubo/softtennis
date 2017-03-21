@@ -1,0 +1,41 @@
+<!-- BEGIN: CONTENT/MISC/SERVICES-4 -->
+<div class="c-content-box c-size-md c-bg-img-top c-bg-parallax">
+  <div class="container">
+    <div class="c-content-feature-11">
+      <div class="row">
+        <div class="col-md-6 col-md-push-6 c-video clearfix">
+          <div class="c-content-title-1 c-theme c-title-md c-margin-t-40">
+            <h3 class="c-font-bold c-font-uppercase">Yonex ラケット F-LASER 7S/7V</h3>
+          </div>
+          <div id="c-video-card-3" class="embed-responsive embed-responsive-16by9">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/igMGBmftqus?list=PL3PuqK5ZdDroYKFf1oAFEnn1xD0wSAlc6" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="row">
+            <div class="col-md-6 c-margin-t-10">
+              <a href="http://www.softtennis-lafino.jp/fs/softtennis/F-LASER/FLR7S-001" class="sl-w100 btn btn-md c-btn-square c-btn-red c-btn-uppercase c-btn-bold">F-LASER 7S（後衛用）</a>
+            </div>
+            <div class="col-md-6 c-margin-t-10">
+              <a href="http://www.softtennis-lafino.jp/fs/softtennis/F-LASER/FLR7V-001" class="sl-w100 btn btn-md c-btn-square c-theme-btn c-btn-uppercase c-btn-bold">F-LASER 7V（前衛用）</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-md-pull-6 c-grid" data-related="#c-video-card-3">
+          <div class="c-content-title-1 c-theme c-title-md c-margin-t-40">
+            <h3 class="c-font-bold c-font-uppercase">店長ブログ ゆるっとオキブロ</h3>
+          </div>
+          <div>
+            <ul class="c-content-recent-posts-1">
+              {% for item in rdf.item|slice(0, 4) %}
+                <li><div class="c-post">
+                  <a href="{{ item.link }}" class="c-title">{{ item.title }}</a>
+                  <div class="c-date">{{ item.children('http://purl.org/dc/elements/1.1/').date|date('Y/m/d') }}</div>
+                </div></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END: CONTENT/MISC/SERVICES-4 -->

@@ -1,4 +1,8 @@
 <?php
+// Twig テンプレートエンジン
 $twig = require_once('./lib/init.php');
 
-echo $twig->render('pages/home/home.html.twig');
+// ブログ RDF 取得
+$rdf = simplexml_load_file('http://lafino-softtennis.officialblog.jp/index.rdf');
+
+echo $twig->render('pages/home/home.html.twig', ['rdf' => $rdf]);
