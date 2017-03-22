@@ -7,6 +7,7 @@
   <meta content="" name="description" />
   <meta content="" name="author" />
   <link rel="apple-touch-icon" href="http://www.softtennis-lafino.jp/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico" />
   <!-- BEGIN GLOBAL MANDATORY STYLES -->
   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
   <link href="{{ ssl_url('assets/plugins/socicon/socicon.css') }}" rel="stylesheet" type="text/css" />
@@ -29,7 +30,6 @@
   <link href="{{ ssl_url('assets/base/css/custom.css') }}" rel="stylesheet" type="text/css" />
   <!-- END THEME STYLES -->
   <!-- BEGIN SITE STYLES -->
-  <link href="/css/site.css" rel="stylesheet" type="text/css" />
+  {{ include('layouts/_sitecss.html.twig') }}
   <!-- END SITE STYLES -->
-  <link rel="shortcut icon" href="favicon.ico" />
 </head>
