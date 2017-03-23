@@ -8,38 +8,16 @@
         </div>
         <div>
           <ul class="c-content-recent-posts-1">
+            {% for item in datas.news %}
             <li>
               <div class="c-post">
-                <a href="https://c07.future-shop.jp/fs/softtennis/MemberEntryEdit.html" class="c-title">
-                  オープンキャンペーン！<br>無料会員登録で今すぐ使える 1,000円分のポイント進呈！
+                <a href="{{ item.link }}" class="c-title">
+                  {{ item.title | raw }}
                 </a>
-                <div class="c-date">2017/03/22（水）</div>
+                <div class="c-date">{{ item.date }}</div>
               </div>
             </li>
-            <li>
-              <div class="c-post">
-                <a href="http://lafino-softtennis.officialblog.jp/" class="c-title">
-                  <i class="icon-feed"></i>
-                  ブログ </a>, &nbsp;
-                <a href="https://twitter.com/soft_lafino" class="c-title">
-                  <i class="icon-social-twitter"></i>
-                  Twitter </a>, &nbsp;
-                <a href="https://www.facebook.com/lafino.softtennis/" class="c-title">
-                  <i class="icon-social-facebook"></i>
-                  Facebook </a>&nbsp;
-                <a href="http://lafino-softtennis.officialblog.jp/" class="c-title">
-                  やってます。見に来てください</a>
-                <div class="c-date">2017/03/22（水）</div>
-              </div>
-            </li>
-            <li>
-              <div class="c-post">
-                <a href="https://c07.future-shop.jp/fs/softtennis/MemberEntryEdit.html" class="c-title">
-                  ソフトテニスショップ LAFINO オープン！
-                </a>
-                <div class="c-date">2017/03/22（水）</div>
-              </div>
-            </li>
+            {% endfor %}
           </ul>
         </div>
       </div>
@@ -50,9 +28,11 @@
         <div class="c-content-v-center c-bg-red" data-height="height">
           <div class="c-wrapper">
             <div class="c-body c-center">
-              <h3 class="c-font-white c-font-bold">オープンキャンペーン！<br>無料会員登録で<br>今すぐ使える 1,000円 分のポイント進呈！</h3>
+              <h3 class="c-font-white c-font-bold">{{ datas.pickup.text | raw }}</h3>
               <br>
-              <a href="https://c07.future-shop.jp/fs/softtennis/MemberEntryEdit.html" class="btn btn-md c-btn-square c-theme-btn c-btn-uppercase c-btn-bold">今すぐ登録</a>
+              <a href="{{ datas.pickup.link }}" class="btn btn-md c-btn-square c-theme-btn c-btn-uppercase c-btn-bold">
+                {{ datas.pickup.button }}
+              </a>
             </div>
           </div>
         </div>
